@@ -72,7 +72,7 @@ set(BOX2D_API_FILES
 set(CMAKE_C_VISIBILITY_PRESET hidden)
 set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
 
-add_library(box2d ${BOX2D_SOURCE_FILES} ${BOX2D_API_FILES})
+add_library(box2d SHARED ${BOX2D_SOURCE_FILES} ${BOX2D_API_FILES})
 
 # Generate box2d_export.h to handles shared library builds
 # turned this off to make Box2D easier to use without cmake
